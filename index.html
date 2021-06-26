@@ -1,11 +1,13 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" id="html">
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="width=device-width" />
   <title>Title</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation-emails/2.3.1/foundation-emails.min.css" integrity="sha512-9sIiS0bJkbDiKWOECYpIJEJDAtFD8AJWUZAyyON2lo1IcwQFw/4o1iVThrGxNtMy45muRaQEOXIMMYgVroTNPA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation-emails/2.3.1/foundation-emails.min.css"
+    integrity="sha512-9sIiS0bJkbDiKWOECYpIJEJDAtFD8AJWUZAyyON2lo1IcwQFw/4o1iVThrGxNtMy45muRaQEOXIMMYgVroTNPA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <style>
   .main {
@@ -17,25 +19,32 @@
     margin-top: 80px;
   }
 
+  #html {
+    background-color: rgb(235, 235, 235);
+  }
+
+  .title {
+    margin-left: 60px;
+    padding-top: 15px;
+  }
+
   .welcome-message {
-    margin-left: 515px;
-    margin-right: 515px;
+    margin-left: 600px;
+    margin-right: 600px;
     font-family: Avenir;
-    font-size: 1.5rem;
+    font-size: 1.35rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 38px;
+    line-height: 35px;
     letter-spacing: 0em;
     text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    /* background-color: blue; */
   }
 
   .footer-headings {
     color: #333333;
     font-family: Avenir;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-style: normal;
     font-weight: 900;
     line-height: 27px;
@@ -52,7 +61,103 @@
     line-height: 62px;
     letter-spacing: 0em;
     text-align: left;
+  }
 
+  .connect-div {
+    margin-left: 70px;
+    float: left
+  }
+
+  .footer-links-divs {
+    margin-left: 200px;
+    float: left
+  }
+
+  #main {
+    background-color: #fff
+  }
+
+
+  @media only screen and (max-width:768px) {
+    .main {
+      width: 80%;
+      color: #fff;
+      height: 80px;
+      margin-left: 45px;
+      margin-right: 160px;
+
+    }
+
+    .title {
+      margin-left: 95px;
+      padding-top: 15px;
+
+    }
+
+    .welcome-message {
+      margin-left: 35px;
+      margin-right: 35px;
+      /* margin-top: 170px; */
+      font-family: Avenir;
+      font-size: 1.35rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 35px;
+      letter-spacing: 0em;
+      text-align: center;
+      /* background-color: lightblue; */
+    }
+
+    .connect-div {
+      margin-left: 170px;
+      float: left;
+      display: none;
+    }
+
+    .footer-links-divs {
+      margin-left: 170px;
+      float: left;
+      display: none;
+    }
+
+    #main {
+      background-color: #fff;
+      position: absolute;
+      margin-top: 120px;
+    }
+
+    #html {
+      background-color: #fff;
+    }
+  }
+
+  @media only screen and (max-width:1080px) {
+    .main {
+      width: 80%;
+      color: #fff;
+      height: 80px;
+      margin-left: 40px;
+      margin-right: 170px;
+      margin-top: 50px;
+    }
+
+    .title {
+      margin-left: 90px;
+      padding-top: 15px;
+    }
+
+    .welcome-message {
+      margin-left: 25px;
+      margin-right: 25px;
+      font-family: Avenir;
+      font-size: 1.35rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 35px;
+      letter-spacing: 0em;
+      text-align: center;
+      /* background-color: lightblue; */
+    }
   }
 </style>
 
@@ -60,15 +165,16 @@
   <!-- <style> -->
   <table class="body" data-made-with-foundation>
     <tr>
-      <td class="float-center" align="center" valign="top" style="background-color: #fff;">
-        <center>
+      <td class="float-center"  valign="top" id="main">
+        
           <div class="main">
-            <h1 style="margin-left: 60px; padding-top: 15px;">Renamarket</h1>
+            <h1 class="title">Renamarket</h1>
           </div>
           <div style="display: flex; 
           justify-content: center;
           align-items: center;">
-            <img src="https://res.cloudinary.com/diued7ugb/image/upload/v1621971684/Mail-bro_1_lgwkq6.png" alt="welcome" srcset="" style="width: 170px;">
+            <img src="https://res.cloudinary.com/diued7ugb/image/upload/v1621971684/Mail-bro_1_lgwkq6.png" alt="welcome"
+              srcset="" style="width: 170px;">
           </div>
           <div>
             <h3 style=" color: #243853;
@@ -93,14 +199,14 @@
               
               ">Confirm Email</button></a> <br><br><br>
           </div>
-        </center>
+        
 
       </td>
 
     </tr>
 
   </table><br><br>
-  <div style="margin-left: 70px; float: left;">
+  <div class="footer-links-divs">
     <h6 style="font-family: Avenir;
     font-size: 1.8rem;
     font-style: normal;
@@ -111,9 +217,15 @@
     ">
       Connect <br><span>With us</span>
     </h6>
-    <a href="" style="float:left;"><img src="https://res.cloudinary.com/diued7ugb/image/upload/v1621972121/twitter_lqqpuh.png" style="width: 20px;" alt="twitter" srcset=""></a>
-    <a href="" style="float:left;"><img src="https://res.cloudinary.com/diued7ugb/image/upload/v1621972062/facebook_wtt7gy.png" style="width: 8px; margin-left: 10px;" alt="Facebook" srcset=""></a>
-    <a href="" style="float:left;"><img src="https://res.cloudinary.com/diued7ugb/image/upload/v1621972082/linkedin2_vsltqc.png" style="width: 18px; margin-left: 10px;" alt="linkedin" srcset=""></a><br>
+    <a href="" style="float:left;"><img
+        src="https://res.cloudinary.com/diued7ugb/image/upload/v1621972121/twitter_lqqpuh.png" style="width: 20px;"
+        alt="twitter" srcset=""></a>
+    <a href="" style="float:left;"><img
+        src="https://res.cloudinary.com/diued7ugb/image/upload/v1621972062/facebook_wtt7gy.png"
+        style="width: 8px; margin-left: 10px;" alt="Facebook" srcset=""></a>
+    <a href="" style="float:left;"><img
+        src="https://res.cloudinary.com/diued7ugb/image/upload/v1621972082/linkedin2_vsltqc.png"
+        style="width: 18px; margin-left: 10px;" alt="linkedin" srcset=""></a><br>
     <p style="color: #333333; font-family: Avenir;
     font-size: 0.9rem;
     font-style: normal;
@@ -129,7 +241,7 @@
     letter-spacing: 0em;
     text-align: left;" href="">info@openmarket.com</a></span></p>
   </div>
-  <div style="margin-left: 200px; float: left;">
+  <div class="footer-links-divs">
     <h6 class="footer-headings">
       Privacy
     </h6>
@@ -137,7 +249,7 @@
     <a class="footer-links" style="color: #333333;" href=""> Privacy Policy</a><br>
     <a class="footer-links" style="color: #333333;" href="">Terms & Condition</a><br>
   </div>
-  <div style="margin-left: 200px; float: left;">
+  <div class="footer-links-divs">
     <h6 class="footer-headings">
       Get Help
     </h6>
@@ -145,7 +257,7 @@
     <a class="footer-links" href="" style="color: #333333;"> Contact us</a><br>
 
   </div>
-  <div style="margin-left: 290px; float: left;">
+  <div class="footer-links-divs">
     <h6 class="footer-headings">
       Renamarket
     </h6>
@@ -153,7 +265,7 @@
     <a class="footer-links" href="" style="color: #333333;"> About us</a><br>
 
   </div>
-  <div style="margin-left: 100px; float: left;">
+  <div class="footer-links-divs">
     <p style="font-family: Avenir;
     font-size: 0.9rem;
     font-style: normal;
